@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  
+  <style>
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    gap: 15px;
+  }
+  .flex , .flex-container{
+    display: flex;
+  }
+  .grid {
+    background-color: black;
+  }
+  
+  .tall {
+    grid-row: span 3;
+    width: 200px;
+  }
+  
+  .horizontal {
+    grid-row: span 3;
+    width: 200px;
+  }
+  
+  .short{
+    grid-column: span 4;
+  }
+  
+  /* second */
+  
+  .flex,  {
+    grid-column: span 5;
+    gap: 20px;
+    padding: 20px;
+  }
+    
+  
+  
+  /* last */
+  
+  .longest {
+    grid-column: span 4;
+  }
+  
+  .longest2{
+    grid-column: span 4;
+  }
+  
+  .longest3 {
+    grid-column: span 6;
+  }
+  
+  
+  
+  .box2 {
+    grid-column: span 2;
+  }
+  
+  .box3 {
+    grid-column: span 3;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .flex-box1 {
+    background-color: white;
+    flex: 3;
+  }
+  
+  .flex-box2 {
+    background-color: white;
+    flex: 2;
+  }
+  
+  .flex-box3 {
+    background-color: white;
+    flex: 1;
+  }
+  
+  </style>
+  
+  
+</head>
+
+<body>
+  <div class="container">
+    <div class="grid tall">1</div>
+    <div class="grid horizontal flex-container">
+      <div class="flex-box1"></div>
+      <div class="flex-box2"></div>
+      <div class="flex-box3"></div>
+    </div>
+   
+    
+    <div class="grid short">3</div>
+    
+    
+    
+    
+    
+    
+
+  
+  
+
+  <div class="grid longest"></div>
+  <div class="grid longest2"></div>
+  <div class="grid longest3"></div>
+  <div class="grid box1"></div>
+  <div class="grid box2"></div>
+  <div class="grid box3"></div>
+  
+    
+  </div>
+  
+  
+</body>
+
+</html>
